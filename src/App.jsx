@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { Toaster } from 'react-hot-toast'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
 
      </Routes>
       <Footer/>
+      <Toaster position="top-right" reverseOrder={false} /> {/* ✅ Toast container */}
     </div>
   )
 }

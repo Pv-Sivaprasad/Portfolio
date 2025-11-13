@@ -1,9 +1,37 @@
-import React from 'react'
+import React , {useRef}from 'react'
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaTwitter } from 'react-icons/fa'
-
+import emailjs from 'emailjs-com'
+import toast from 'react-hot-toast'
 
 const Contact = () => {
+
+    const form=useRef()
+    const sendEMail=(e)=>{
+
+        e.preventDefault()
+
+            emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          )
+          .then(() => {
+            toast.success('✅ Email sent successfully!', {
+              style: { background: '#333', color: '#fff' },
+            })
+            form.current.reset()
+          })
+          .catch((error) => {
+            console.error('Error:', error)
+            toast.error('❌ Failed to send message.', {
+              style: { background: '#333', color: '#fff' },
+            })
+          })
+        
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -29,12 +57,15 @@ const Contact = () => {
                     {/**contact Form */}
 
                     <div className="">
-                        <form action="" className=' space-y-6'>
+                        {/* <form  action="" className=' space-y-6'> */}
+                        <form ref={form} onSubmit={sendEMail} action="" className=' space-y-6'>
+
                             <div>
                                 <label htmlFor='name' className='block text-gray-300 mb-2'>Your Name</label>
 
                                 <input className='w-full bg-dark-300 border border-dark-400 rounded-lg 
                                 px-4 py-3 outline-none'
+                                 name="name"
                                     type="text" />
                             </div>
                             <div>
@@ -42,6 +73,7 @@ const Contact = () => {
 
                                 <input className='w-full bg-dark-300 border border-dark-400 rounded-lg 
                                 px-4 py-3 outline-none'
+                                name="email"
                                     type="email" />
                             </div>
                             <div>
@@ -49,6 +81,7 @@ const Contact = () => {
 
                                 <textarea className='w-full h-40 bg-dark-300 border border-dark-400 rounded-lg 
                                 px-4 py-3 outline-none'
+                                 name="message"
                                     type="message" />
                             </div>
                             <button type='submit' className='w-full px-6 py-3 bg-purple rounded-lg font-medium
