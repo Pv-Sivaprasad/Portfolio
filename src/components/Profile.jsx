@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion, time } from 'framer-motion'
 import {assets} from '../assets/assets'
+import Typewriter from './TypeWriter'
+
 
 const Profile = () => {
   return (
@@ -23,10 +25,13 @@ const Profile = () => {
 
     <h1 className=' text-4xl md:text-6xl font-bold mb-4'>
       Hi, I'm <span>Sivaprasad</span>
+      <h2>
+        <Typewriter/>
+      </h2>
     </h1>
-    <h2 className='text-2xl md:text-4xl font-semibold mb-6 typewriter'>
+    {/* <h2 className='text-2xl md:text-4xl font-semibold mb-6 typewriter'>
       Full Stack Developer
-    </h2>
+    </h2> */}
     <p className='text-lg text-gray-300 mb-8'>
       I architect and deploy end-to-end web applications, handling everything from database design to dynamic user interfaces.
       </p>
