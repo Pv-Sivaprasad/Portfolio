@@ -90,21 +90,21 @@ const Navbar = () => {
             <a  onClick={()=>setShowMenu(!showMenu)} href='#home' className='relative text-white/80 transition duration-300 hover:text-purple group'>
             <span>Home</span>
             </a>
-            <a  onClick={()=>setShowMenu(!showMenu)} href='#home' className='relative text-white/80 transition duration-300 hover:text-purple group'>
+            <a  onClick={()=>setShowMenu(!showMenu)} href='#about' className='relative text-white/80 transition duration-300 hover:text-purple group'>
             <span>About</span>
             </a>
-            <a  onClick={()=>setShowMenu(!showMenu)} href='#home' className='relative text-white/80 transition duration-300 hover:text-purple group'>
+            <a  onClick={()=>setShowMenu(!showMenu)} href='#skills' className='relative text-white/80 transition duration-300 hover:text-purple group'>
             <span>Skills</span>
             
             </a>
-            <a  onClick={()=>setShowMenu(!showMenu)} href='#home' className='relative text-white/80 transition duration-300 hover:text-purple group'>
+            <a  onClick={()=>setShowMenu(!showMenu)} href='#projects' className='relative text-white/80 transition duration-300 hover:text-purple group'>
             <span>Projects</span>
             </a>
-            <a  onClick={()=>setShowMenu(!showMenu)} href='#home' className='relative text-white/80 transition duration-300 hover:text-purple group'>
+            <a  onClick={()=>setShowMenu(!showMenu)} href='#experience' className='relative text-white/80 transition duration-300 hover:text-purple group'>
             <span>Experience</span>
     
             </a>
-            <a  onClick={()=>setShowMenu(!showMenu)} href='#home' className='relative text-white/80 transition duration-300 hover:text-purple group'>
+            <a  onClick={()=>setShowMenu(!showMenu)} href='#contact' className='relative text-white/80 transition duration-300 hover:text-purple group'>
             <span>Contact</span>
            
             </a>
