@@ -141,9 +141,71 @@ const Contact = () => {
 
             </form>
           </div>
+          <div className="space-y-8">
+                        <div className="flex items-start">
+
+                            <div className='text-purple text-2xl mr-4'>
+
+                                <FaMapMarkerAlt />
+                            </div>
+                            <div className="">
+                                <h3 className='text-lg font-semibold'>Location</h3>
+                                <p className='text-gray-400'>Shoranur, Palakkad
+                                    kerala 679121</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-start">
+
+                            <div className='text-purple text-2xl mr-4'>
+
+                                <FaEnvelope />
+                            </div>
+                            <div className="">
+                                <h3 className='text-lg font-semibold'>Email</h3>
+                                <p className='text-gray-400'>sivaprasadpv777@gmail.com</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start">
+
+                            <div className='text-purple text-2xl mr-4'>
+
+                                <FaMapMarkerAlt />
+                            </div>
+                            <div className="">
+                                <h3 className='text-lg font-semibold'>Phone</h3>
+                                <p className='text-gray-400'>(+91) 7034737573 , 6238912433</p>
+                            </div>
+                        </div>
+
+                        {/**Follow me */}
+                        <div className="pt-4">
+                            <h3 className='text-lg font-semibold mb-4'>Follow me</h3>
+                            <div className="flex space-x-4">
+                                <a href="https://github.com/Pv-Sivaprasad" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                                text-purple hover:bg-purple hover:text-white transition duration-300 '>
+                                    <FaGithub/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sivaprasad-pv/" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                                text-blue hover:bg-blue hover:text-white transition duration-300 '>
+                                    <FaLinkedinIn/>
+                                </a>
+                                <a href="#" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                                text-purple hover:bg-dark hover:text-white transition duration-300 '>
+                                    <FaTwitter/>
+                                </a>
+                                <a href="https://www.instagram.com/this_is_sivaprasadpv/" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                                text-purple hover:bg-pink hover:text-white transition duration-300 '>
+                                    <FaInstagram/>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
         </div>
-      </div>
     </motion.div>
   )
 }
