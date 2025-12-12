@@ -1,4 +1,4 @@
-import { FaLightbulb,FaDraftingCompass , FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, FaPaypal, FaDocker, FaCss3 } from 'react-icons/fa';
+import { FaLightbulb,FaDraftingCompass , FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud,FaLayerGroup, FaPaypal, FaDocker, FaCss3 } from 'react-icons/fa';
 
 import profileImg7 from '../assets/siva.jpg'
 import projectImg1 from '../assets/Furniture.jpg';
@@ -62,12 +62,12 @@ export const skills = [
     description: 'Designing and optimizing databases for performance and scalability.',
     tags: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase']
   },
-  // {
-  //   title: 'Mobile Development',
-  //   icon: FaMobileAlt,
-  //   description: 'Building cross-platform mobile applications with modern tools.',
-  //   tags: ['React Native', 'Flutter', 'Ionic', 'Swift']
-  // },
+  {
+    title: 'System Design',
+    icon: FaLayerGroup,
+    description: 'Building cross-platform mobile applications with modern tools.',
+    tags: ['Microservices', 'Event-Driven Architecture', 'Load Balancing', 'Caching Strategies']
+  },
   {
     title: 'Cloud & DevOps',
     icon: FaCloud,
