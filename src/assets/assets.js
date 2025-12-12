@@ -1,6 +1,5 @@
 import { FaLightbulb,FaDraftingCompass , FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, FaPaypal, FaDocker, FaCss3 } from 'react-icons/fa';
 
-import profileImg from '../assets/profile.avif';
 import profileImg7 from '../assets/siva.jpg'
 import projectImg1 from '../assets/Furniture.jpg';
 import projectImg2 from '../assets/Hospital.jfif';
@@ -11,7 +10,7 @@ import projectImg6 from '../assets/user.jpg';
 
 
 export const assets = {
-  profileImg, profileImg7
+ profileImg7,
 }
 
 
@@ -90,7 +89,7 @@ export const projects = [
     title: "Hospital Management with MicroService",
     description: "Developed a scalable hospital management system using the MERN stack with a microservices architecture.",
     image: projectImg2,
-    tech: ["React", "Firebase", "Tailwind CSS", "WebSockets", "Stripe", "Docker", "kubernetes", "Microservices"],
+    tech: ["React", "Firebase", "Tailwind CSS", "WebSockets", "Stripe", "Docker", "kubernetes", "Microservices", ],
     icons: [FaReact, FaFire, FaCloud, FaDatabase, FaStripe, FaDocker, ],
     demo: "#",
     code: "https://github.com/Pv-Sivaprasad/Renewa",
@@ -110,7 +109,7 @@ export const projects = [
     title: "A Weather App",
     description: "Know before you go. Unmatched accuracy for your daily forecast.",
     image: projectImg3,
-    tech: ["React"],
+    tech: ["React","Weather Api"],
     icons: [FaReact],
     demo: "https://weather-app-y2dn.onrender.com",
     code: "https://github.com/Pv-Sivaprasad/weather-app",
@@ -121,7 +120,7 @@ export const projects = [
     image: projectImg4,
     tech: ["React.js", "Tailwind CSS", "Framer Motion",],
     icons: [FaReact, FaCloud],
-    demo: "#",
+    demo: "https://portfolio-three-green-35.vercel.app/",
     code: "https://github.com/Pv-Sivaprasad/Portfolio",
   },
   {
