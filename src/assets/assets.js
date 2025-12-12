@@ -65,7 +65,7 @@ export const skills = [
   {
     title: 'System Design',
     icon: FaLayerGroup,
-    description: 'Building cross-platform mobile applications with modern tools.',
+    description: 'Planning the structure and components of high-availability, scalable software systems.',
     tags: ['Microservices', 'Event-Driven Architecture', 'Load Balancing', 'Caching Strategies']
   },
   {
